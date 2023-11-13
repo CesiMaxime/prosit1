@@ -1,4 +1,6 @@
 #pragma once
+
+//class
 class Point
 {
 private:
@@ -13,3 +15,5 @@ public:
 	void deplacement(int para, int parb);
 };
 
+//fonctions
+float distance(Point parpa, Point parpb);
