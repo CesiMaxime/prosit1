@@ -6,8 +6,8 @@ int main()
 {
     cout << "Hello World!\n" << endl;
     Point a(0, 0);
-    Point b(1, 1);
-    float res = distance(a, b);
+    Point *b = new Point(1, 1);
+    float res = distance(a, *b);
 
     cout << "Distance between A et B: ";
     cout << res << "\n" << endl;
@@ -24,9 +24,9 @@ int main()
     cin >> newx;
     cout << "Insert the new integer y value for the point b: ";
     cin >> newy;
-    b.deplacement(newx, newy);
+    b->deplacement(newx, newy);
 
-    res = distance(a, b);
+    res = distance(a, *b);
     cout << "Distance between A et B: ";
     cout << res << "\n" << endl;
 }
