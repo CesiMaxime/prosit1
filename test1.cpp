@@ -9,6 +9,24 @@ int main()
     Point b(1, 1);
     float res = distance(a, b);
 
-    cout << res << endl;
+    cout << "Distance between A et B: ";
+    cout << res << "\n" << endl;
 
+    int newx;
+    int newy;
+    cout << "Insert the new integer x value for the point a: ";
+    cin >> newx;
+    cout << "Insert the new integer y value for the point a: ";
+    cin >> newy;
+    a.deplacement(newx, newy);
+
+    cout << "Insert the new integer x value for the point b: ";
+    cin >> newx;
+    cout << "Insert the new integer y value for the point b: ";
+    cin >> newy;
+    b.deplacement(newx, newy);
+
+    res = distance(a, b);
+    cout << "Distance between A et B: ";
+    cout << res << "\n" << endl;
 }
